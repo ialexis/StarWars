@@ -12,6 +12,9 @@
 		2CC5C4CE1AC218FB006881B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5C4CD1AC218FB006881B2 /* Images.xcassets */; };
 		2CC5C4D11AC218FB006881B2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5C4CF1AC218FB006881B2 /* LaunchScreen.xib */; };
 		2CC5C4DD1AC218FB006881B2 /* StarWarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC5C4DC1AC218FB006881B2 /* StarWarsTests.m */; };
+		2CC5C4E81AC21939006881B2 /* IAAStarWarsCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC5C4E71AC21939006881B2 /* IAAStarWarsCharacter.m */; };
+		2CC5C4F01AC21A59006881B2 /* IAACharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC5C4EE1AC21A59006881B2 /* IAACharacterViewController.m */; };
+		2CC5C4F11AC21A59006881B2 /* IAACharacterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5C4EF1AC21A59006881B2 /* IAACharacterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,11 @@
 		2CC5C4D61AC218FB006881B2 /* StarWarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC5C4DB1AC218FB006881B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CC5C4DC1AC218FB006881B2 /* StarWarsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarWarsTests.m; sourceTree = "<group>"; };
+		2CC5C4E61AC21939006881B2 /* IAAStarWarsCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAAStarWarsCharacter.h; sourceTree = "<group>"; };
+		2CC5C4E71AC21939006881B2 /* IAAStarWarsCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAAStarWarsCharacter.m; sourceTree = "<group>"; };
+		2CC5C4ED1AC21A59006881B2 /* IAACharacterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAACharacterViewController.h; sourceTree = "<group>"; };
+		2CC5C4EE1AC21A59006881B2 /* IAACharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAACharacterViewController.m; sourceTree = "<group>"; };
+		2CC5C4EF1AC21A59006881B2 /* IAACharacterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IAACharacterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,8 @@
 		2CC5C4BA1AC218FA006881B2 = {
 			isa = PBXGroup;
 			children = (
+				2CC5C4F21AC21A5F006881B2 /* Controllers */,
+				2CC5C4E91AC2193E006881B2 /* Models */,
 				2CC5C4C51AC218FA006881B2 /* StarWars */,
 				2CC5C4D91AC218FB006881B2 /* StarWarsTests */,
 				2CC5C4C41AC218FA006881B2 /* Products */,
@@ -109,6 +119,25 @@
 				2CC5C4DB1AC218FB006881B2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2CC5C4E91AC2193E006881B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CC5C4E61AC21939006881B2 /* IAAStarWarsCharacter.h */,
+				2CC5C4E71AC21939006881B2 /* IAAStarWarsCharacter.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2CC5C4F21AC21A5F006881B2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2CC5C4ED1AC21A59006881B2 /* IAACharacterViewController.h */,
+				2CC5C4EE1AC21A59006881B2 /* IAACharacterViewController.m */,
+				2CC5C4EF1AC21A59006881B2 /* IAACharacterViewController.xib */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CC5C4D11AC218FB006881B2 /* LaunchScreen.xib in Resources */,
+				2CC5C4F11AC21A59006881B2 /* IAACharacterViewController.xib in Resources */,
 				2CC5C4CE1AC218FB006881B2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,6 +241,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CC5C4CC1AC218FB006881B2 /* AppDelegate.m in Sources */,
+				2CC5C4E81AC21939006881B2 /* IAAStarWarsCharacter.m in Sources */,
+				2CC5C4F01AC21A59006881B2 /* IAACharacterViewController.m in Sources */,
 				2CC5C4C91AC218FB006881B2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
