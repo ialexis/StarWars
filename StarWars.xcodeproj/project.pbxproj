@@ -15,6 +15,22 @@
 		2CC5C4E81AC21939006881B2 /* IAAStarWarsCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC5C4E71AC21939006881B2 /* IAAStarWarsCharacter.m */; };
 		2CC5C4F01AC21A59006881B2 /* IAACharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC5C4EE1AC21A59006881B2 /* IAACharacterViewController.m */; };
 		2CC5C4F11AC21A59006881B2 /* IAACharacterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5C4EF1AC21A59006881B2 /* IAACharacterViewController.xib */; };
+		2CC5C5031AC22820006881B2 /* c3po.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5C4F31AC22820006881B2 /* c3po.caf */; };
+		2CC5C5041AC22820006881B2 /* c3po.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5C4F41AC22820006881B2 /* c3po.jpg */; };
+		2CC5C5051AC22820006881B2 /* chewbacca.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5C4F51AC22820006881B2 /* chewbacca.caf */; };
+		2CC5C5061AC22820006881B2 /* chewbacca.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5C4F61AC22820006881B2 /* chewbacca.jpg */; };
+		2CC5C5071AC22820006881B2 /* darthVader.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5C4F71AC22820006881B2 /* darthVader.jpg */; };
+		2CC5C5081AC22820006881B2 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5C4F81AC22820006881B2 /* icon.png */; };
+		2CC5C5091AC22820006881B2 /* iconSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5C4F91AC22820006881B2 /* iconSmall.png */; };
+		2CC5C50A1AC22820006881B2 /* palpatine.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5C4FA1AC22820006881B2 /* palpatine.caf */; };
+		2CC5C50B1AC22820006881B2 /* palpatine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5C4FB1AC22820006881B2 /* palpatine.jpg */; };
+		2CC5C50C1AC22820006881B2 /* r2-d2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5C4FC1AC22820006881B2 /* r2-d2.caf */; };
+		2CC5C50D1AC22820006881B2 /* R2-D2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5C4FD1AC22820006881B2 /* R2-D2.jpg */; };
+		2CC5C50E1AC22820006881B2 /* tarkin.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5C4FE1AC22820006881B2 /* tarkin.caf */; };
+		2CC5C50F1AC22820006881B2 /* tarkin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5C4FF1AC22820006881B2 /* tarkin.jpg */; };
+		2CC5C5101AC22820006881B2 /* vader.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5C5001AC22820006881B2 /* vader.caf */; };
+		2CC5C5111AC22820006881B2 /* yoda.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5C5011AC22820006881B2 /* yoda.caf */; };
+		2CC5C5121AC22820006881B2 /* yoda.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5C5021AC22820006881B2 /* yoda.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +59,22 @@
 		2CC5C4ED1AC21A59006881B2 /* IAACharacterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAACharacterViewController.h; sourceTree = "<group>"; };
 		2CC5C4EE1AC21A59006881B2 /* IAACharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAACharacterViewController.m; sourceTree = "<group>"; };
 		2CC5C4EF1AC21A59006881B2 /* IAACharacterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IAACharacterViewController.xib; sourceTree = "<group>"; };
+		2CC5C4F31AC22820006881B2 /* c3po.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = c3po.caf; sourceTree = "<group>"; };
+		2CC5C4F41AC22820006881B2 /* c3po.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c3po.jpg; sourceTree = "<group>"; };
+		2CC5C4F51AC22820006881B2 /* chewbacca.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chewbacca.caf; sourceTree = "<group>"; };
+		2CC5C4F61AC22820006881B2 /* chewbacca.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chewbacca.jpg; sourceTree = "<group>"; };
+		2CC5C4F71AC22820006881B2 /* darthVader.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darthVader.jpg; sourceTree = "<group>"; };
+		2CC5C4F81AC22820006881B2 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		2CC5C4F91AC22820006881B2 /* iconSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconSmall.png; sourceTree = "<group>"; };
+		2CC5C4FA1AC22820006881B2 /* palpatine.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = palpatine.caf; sourceTree = "<group>"; };
+		2CC5C4FB1AC22820006881B2 /* palpatine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = palpatine.jpg; sourceTree = "<group>"; };
+		2CC5C4FC1AC22820006881B2 /* r2-d2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "r2-d2.caf"; sourceTree = "<group>"; };
+		2CC5C4FD1AC22820006881B2 /* R2-D2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "R2-D2.jpg"; sourceTree = "<group>"; };
+		2CC5C4FE1AC22820006881B2 /* tarkin.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tarkin.caf; sourceTree = "<group>"; };
+		2CC5C4FF1AC22820006881B2 /* tarkin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarkin.jpg; sourceTree = "<group>"; };
+		2CC5C5001AC22820006881B2 /* vader.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = vader.caf; sourceTree = "<group>"; };
+		2CC5C5011AC22820006881B2 /* yoda.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = yoda.caf; sourceTree = "<group>"; };
+		2CC5C5021AC22820006881B2 /* yoda.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yoda.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +98,6 @@
 		2CC5C4BA1AC218FA006881B2 = {
 			isa = PBXGroup;
 			children = (
-				2CC5C4F21AC21A5F006881B2 /* Controllers */,
-				2CC5C4E91AC2193E006881B2 /* Models */,
 				2CC5C4C51AC218FA006881B2 /* StarWars */,
 				2CC5C4D91AC218FB006881B2 /* StarWarsTests */,
 				2CC5C4C41AC218FA006881B2 /* Products */,
@@ -90,6 +120,9 @@
 				2CC5C4CB1AC218FB006881B2 /* AppDelegate.m */,
 				2CC5C4CD1AC218FB006881B2 /* Images.xcassets */,
 				2CC5C4CF1AC218FB006881B2 /* LaunchScreen.xib */,
+				2CC5C4E91AC2193E006881B2 /* Models */,
+				2CC5C4F21AC21A5F006881B2 /* Controllers */,
+				2CC5C5131AC22827006881B2 /* Resources */,
 				2CC5C4C61AC218FA006881B2 /* Supporting Files */,
 			);
 			path = StarWars;
@@ -128,6 +161,7 @@
 				2CC5C4E71AC21939006881B2 /* IAAStarWarsCharacter.m */,
 			);
 			name = Models;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		2CC5C4F21AC21A5F006881B2 /* Controllers */ = {
@@ -138,6 +172,30 @@
 				2CC5C4EF1AC21A59006881B2 /* IAACharacterViewController.xib */,
 			);
 			name = Controllers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		2CC5C5131AC22827006881B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2CC5C4F31AC22820006881B2 /* c3po.caf */,
+				2CC5C4F41AC22820006881B2 /* c3po.jpg */,
+				2CC5C4F51AC22820006881B2 /* chewbacca.caf */,
+				2CC5C4F61AC22820006881B2 /* chewbacca.jpg */,
+				2CC5C4F71AC22820006881B2 /* darthVader.jpg */,
+				2CC5C4F81AC22820006881B2 /* icon.png */,
+				2CC5C4F91AC22820006881B2 /* iconSmall.png */,
+				2CC5C4FA1AC22820006881B2 /* palpatine.caf */,
+				2CC5C4FB1AC22820006881B2 /* palpatine.jpg */,
+				2CC5C4FC1AC22820006881B2 /* r2-d2.caf */,
+				2CC5C4FD1AC22820006881B2 /* R2-D2.jpg */,
+				2CC5C4FE1AC22820006881B2 /* tarkin.caf */,
+				2CC5C4FF1AC22820006881B2 /* tarkin.jpg */,
+				2CC5C5001AC22820006881B2 /* vader.caf */,
+				2CC5C5011AC22820006881B2 /* yoda.caf */,
+				2CC5C5021AC22820006881B2 /* yoda.jpg */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,9 +278,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC5C5091AC22820006881B2 /* iconSmall.png in Resources */,
+				2CC5C50D1AC22820006881B2 /* R2-D2.jpg in Resources */,
+				2CC5C50F1AC22820006881B2 /* tarkin.jpg in Resources */,
 				2CC5C4D11AC218FB006881B2 /* LaunchScreen.xib in Resources */,
+				2CC5C50B1AC22820006881B2 /* palpatine.jpg in Resources */,
+				2CC5C50E1AC22820006881B2 /* tarkin.caf in Resources */,
+				2CC5C5041AC22820006881B2 /* c3po.jpg in Resources */,
+				2CC5C5121AC22820006881B2 /* yoda.jpg in Resources */,
+				2CC5C5081AC22820006881B2 /* icon.png in Resources */,
+				2CC5C5071AC22820006881B2 /* darthVader.jpg in Resources */,
+				2CC5C5111AC22820006881B2 /* yoda.caf in Resources */,
+				2CC5C50A1AC22820006881B2 /* palpatine.caf in Resources */,
+				2CC5C5051AC22820006881B2 /* chewbacca.caf in Resources */,
+				2CC5C50C1AC22820006881B2 /* r2-d2.caf in Resources */,
+				2CC5C5101AC22820006881B2 /* vader.caf in Resources */,
+				2CC5C5031AC22820006881B2 /* c3po.caf in Resources */,
 				2CC5C4F11AC21A59006881B2 /* IAACharacterViewController.xib in Resources */,
 				2CC5C4CE1AC218FB006881B2 /* Images.xcassets in Resources */,
+				2CC5C5061AC22820006881B2 /* chewbacca.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

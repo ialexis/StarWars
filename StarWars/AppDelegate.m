@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "IAAStarWarsCharacter.h"
+#import "IAACharacterViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +21,31 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
     [self.window makeKeyAndVisible];
+    
+    
+    //creamos el modelo
+    
+    NSURL *vaderURL = [NSURL URLWithString:@"http://en.wikipedia.org/wiki/Darth_Vader"];
+    
+    NSBundle *b = [NSBundle mainBundle];
+    NSData *vaderSound = [NSData dataWithContentsOfURL:[b URLForResource:@"vader" withExtension:@"caf"]];
+    UIImage *vaderImage=[UIImage imageNamed:@"darthVader.jpg"];
+    
+    
+    IAAStarWarsCharacter *model=[[IAAStarWarsCharacter alloc]
+                                 initWithName:@"Anakin Skywalker"
+                                 alias:@"Darth Vader"
+                                 wikiURL:vaderURL
+                                 soundData:vaderSound
+                                 photo:vaderImage];
+    
+    //Creamos un controlador que lo use
+    IAACharacterViewController *charVC=[[IAACharacterViewController alloc]initWithModel:model];
+    
+    self.window.rootViewController=charVC;
+    
     return YES;
 }
 

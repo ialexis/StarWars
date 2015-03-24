@@ -11,7 +11,7 @@
 @implementation IAAStarWarsCharacter
 
 
-//designated
+//designated init
 -(id) initWithName: (NSString *) name
              alias: (NSString *) alias
            wikiURL: (NSURL *) wikiURL
@@ -29,6 +29,8 @@
     return self;
 }
 
+
+// initcializador de conveniniencia
 -(id) initWithAlias: (NSString *) alias
             wikiURL: (NSURL *) wikiURL
           soundData: (NSData *) soundData
