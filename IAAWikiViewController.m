@@ -25,6 +25,10 @@
 {
     [super viewWillAppear:animated];
     
+    //asegurarse que no se ocupa toda la pantalla cuando estas en un combinador
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
+    
     //asignamos delegado
     self.browser.delegate = self;
     //sincronizamos modelo y vista
@@ -43,6 +47,7 @@
     if (self=[super init])
     {
         _model=model;
+        self.title = @"Wikipedia";
     }
     return self;
 }
@@ -53,4 +58,24 @@
     [self.activityView setHidden:YES];
 }
 
+-(BOOL) webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request
+ navigationType:(UIWebViewNavigationType)navigationType
+{
+    if ((navigationType==UIWebViewNavigationTypeLinkClicked) ||
+        (navigationType==UIWebViewNavigationTypeFormSubmitted))
+    {
+        return false;
+
+    }
+    else{
+        return true;
+    }
+}
+
+-(void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    [self.activityView setHidden:YES];
+
+    NSLog(@"error fatal de la muerte: %@", error.description);
+}
 @end

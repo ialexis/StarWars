@@ -43,11 +43,21 @@
                                  photo:vaderImage];
     
     //Creamos un controlador que lo use
-   // IAACharacterViewController *charVC=[[IAACharacterViewController alloc]initWithModel:model];
+    IAACharacterViewController *charVC=[[IAACharacterViewController alloc]initWithModel:model];
+
     IAAWikiViewController *wVC = [[IAAWikiViewController alloc]initWithModel:model];
     
+    
+    //creo el combinador
+    
+    UITabBarController *tabVC=[[UITabBarController alloc]init];
+    
+    tabVC.viewControllers = @[charVC,wVC];
+    
+
+    
    // self.window.rootViewController=charVC;
-    self.window.rootViewController=wVC;
+    self.window.rootViewController=tabVC;
     
     return YES;
 }

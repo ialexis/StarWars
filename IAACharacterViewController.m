@@ -30,6 +30,7 @@
     if (self=[super initWithNibName:nil bundle:nil])
     {
         _model=model;
+        self.title = [model alias];
     }
     return self;
 }
@@ -39,8 +40,14 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-- (void) viewDidAppear:(BOOL)animated
+- (void) viewWillAppear:(BOOL)animated
 {
+    
+    [super viewWillAppear:animated];
+    //asegurarse que no se ocupa toda la pantalla cuando estas en un combinador
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
+    
     //sincronizar modelo y vista
     self.photoView.image=self.model.photo;
     
