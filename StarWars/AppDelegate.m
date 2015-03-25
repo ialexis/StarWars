@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "IAAStarWarsCharacter.h"
 #import "IAACharacterViewController.h"
+#import "IAAWikiViewController.h"
 
 @interface AppDelegate ()
  
@@ -42,9 +43,11 @@
                                  photo:vaderImage];
     
     //Creamos un controlador que lo use
-    IAACharacterViewController *charVC=[[IAACharacterViewController alloc]initWithModel:model];
+   // IAACharacterViewController *charVC=[[IAACharacterViewController alloc]initWithModel:model];
+    IAAWikiViewController *wVC = [[IAAWikiViewController alloc]initWithModel:model];
     
-    self.window.rootViewController=charVC;
+   // self.window.rootViewController=charVC;
+    self.window.rootViewController=wVC;
     
     return YES;
 }

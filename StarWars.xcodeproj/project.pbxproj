@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2C6C4F2D1AC348490085B9E1 /* CafPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C4F2C1AC348490085B9E1 /* CafPlayer.m */; };
+		2C6C4F321AC34E5E0085B9E1 /* IAAWikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C4F301AC34E5E0085B9E1 /* IAAWikiViewController.m */; };
+		2C6C4F331AC34E5E0085B9E1 /* IAAWikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6C4F311AC34E5E0085B9E1 /* IAAWikiViewController.xib */; };
 		2CC5C4C91AC218FB006881B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC5C4C81AC218FB006881B2 /* main.m */; };
 		2CC5C4CC1AC218FB006881B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC5C4CB1AC218FB006881B2 /* AppDelegate.m */; };
 		2CC5C4CE1AC218FB006881B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5C4CD1AC218FB006881B2 /* Images.xcassets */; };
@@ -47,6 +49,9 @@
 /* Begin PBXFileReference section */
 		2C6C4F2B1AC348490085B9E1 /* CafPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CafPlayer.h; sourceTree = "<group>"; };
 		2C6C4F2C1AC348490085B9E1 /* CafPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CafPlayer.m; sourceTree = "<group>"; };
+		2C6C4F2F1AC34E5E0085B9E1 /* IAAWikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAAWikiViewController.h; sourceTree = "<group>"; };
+		2C6C4F301AC34E5E0085B9E1 /* IAAWikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAAWikiViewController.m; sourceTree = "<group>"; };
+		2C6C4F311AC34E5E0085B9E1 /* IAAWikiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IAAWikiViewController.xib; sourceTree = "<group>"; };
 		2CC5C4C31AC218FA006881B2 /* StarWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC5C4C71AC218FA006881B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CC5C4C81AC218FB006881B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -183,6 +188,9 @@
 				2CC5C4ED1AC21A59006881B2 /* IAACharacterViewController.h */,
 				2CC5C4EE1AC21A59006881B2 /* IAACharacterViewController.m */,
 				2CC5C4EF1AC21A59006881B2 /* IAACharacterViewController.xib */,
+				2C6C4F2F1AC34E5E0085B9E1 /* IAAWikiViewController.h */,
+				2C6C4F301AC34E5E0085B9E1 /* IAAWikiViewController.m */,
+				2C6C4F311AC34E5E0085B9E1 /* IAAWikiViewController.xib */,
 			);
 			name = Controllers;
 			path = ..;
@@ -303,6 +311,7 @@
 				2CC5C5071AC22820006881B2 /* darthVader.jpg in Resources */,
 				2CC5C5111AC22820006881B2 /* yoda.caf in Resources */,
 				2CC5C50A1AC22820006881B2 /* palpatine.caf in Resources */,
+				2C6C4F331AC34E5E0085B9E1 /* IAAWikiViewController.xib in Resources */,
 				2CC5C5051AC22820006881B2 /* chewbacca.caf in Resources */,
 				2CC5C50C1AC22820006881B2 /* r2-d2.caf in Resources */,
 				2CC5C5101AC22820006881B2 /* vader.caf in Resources */,
@@ -329,6 +338,7 @@
 			files = (
 				2CC5C4CC1AC218FB006881B2 /* AppDelegate.m in Sources */,
 				2CC5C4E81AC21939006881B2 /* IAAStarWarsCharacter.m in Sources */,
+				2C6C4F321AC34E5E0085B9E1 /* IAAWikiViewController.m in Sources */,
 				2C6C4F2D1AC348490085B9E1 /* CafPlayer.m in Sources */,
 				2CC5C4F01AC21A59006881B2 /* IAACharacterViewController.m in Sources */,
 				2CC5C4C91AC218FB006881B2 /* main.m in Sources */,
