@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IAACharacterViewController">
             <connections>
                 <outlet property="photoView" destination="Lvd-cU-yiH" id="siF-9K-Wjt"/>
+                <outlet property="playSound" destination="p1O-4T-iPI" id="Thm-zq-w7f"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,7 +20,11 @@
                     <rect key="frame" x="0.0" y="980" width="768" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <items>
-                        <barButtonItem systemItem="play" id="p1O-4T-iPI"/>
+                        <barButtonItem systemItem="play" id="p1O-4T-iPI">
+                            <connections>
+                                <action selector="playSound:" destination="-1" id="RYn-mP-nh4"/>
+                            </connections>
+                        </barButtonItem>
                     </items>
                 </toolbar>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Lvd-cU-yiH">

@@ -8,11 +8,22 @@
 
 #import "IAACharacterViewController.h"
 
+
+
 @interface IAACharacterViewController ()
 
 @end
 
 @implementation IAACharacterViewController
+
+- (IBAction)playSound:(id)sender {
+    //sacamos el sonido del modelo
+    //lo reproducimos
+    //CafPlayer *player =[CafPlayer cafPlayer];
+    self.player = [CafPlayer cafPlayer];
+    [self.player playSoundData:self.model.soundData];
+    
+}
 
 -(id) initWithModel: ( IAAStarWarsCharacter*) model
 {
