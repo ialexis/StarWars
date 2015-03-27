@@ -9,6 +9,7 @@
 @import UIKit;
 #import "IAAStarWarsCharacter.h"
 #import "CafPlayer.h"
+#import "IAAWikiViewController.h"
 
 @interface IAACharacterViewController : UIViewController
 
@@ -17,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *photoView;
 
 - (IBAction)playSound:(id)sender;
+- (IBAction)displayWiki:(id)sender;
 
 -(id) initWithModel: (IAAStarWarsCharacter *) model;
 

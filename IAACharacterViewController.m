@@ -25,6 +25,14 @@
     
 }
 
+- (IBAction)displayWiki:(id)sender {
+    //crear un wiki vc
+    IAAWikiViewController *wikivc=[[IAAWikiViewController alloc]initWithModel:self.model];
+    
+    //hago el push
+    [self.navigationController pushViewController:wikivc animated:YES];
+}
+
 -(id) initWithModel: ( IAAStarWarsCharacter*) model
 {
     if (self=[super initWithNibName:nil bundle:nil])
