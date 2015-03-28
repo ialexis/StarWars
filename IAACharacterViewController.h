@@ -11,7 +11,7 @@
 #import "CafPlayer.h"
 #import "IAAWikiViewController.h"
 
-@interface IAACharacterViewController : UIViewController
+@interface IAACharacterViewController : UIViewController <UISplitViewControllerDelegate>
 
 @property (nonatomic,strong) IAAStarWarsCharacter *model;
 @property (nonatomic, strong) CafPlayer *player;

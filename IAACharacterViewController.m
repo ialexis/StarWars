@@ -65,5 +65,28 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - UISplitViewControllerDelegate
+
+- (void) splitViewController:(UISplitViewController *)svc willChangeToDisplayMode:(UISplitViewControllerDisplayMode)displayMode
+{
+    //averiguo si la tabla se ve
+    if (displayMode==UISplitViewControllerDisplayModeAllVisible)
+    {
+        //la tabla se ve, ocultamos el boton
+        self.navigationItem.leftBarButtonItem=nil;
+    }
+    if (displayMode==UISplitViewControllerDisplayModePrimaryHidden)
+    {
+        //la tabla no se ve, esta oculta, cuelga del boton
+        //ponemos el boton en mi barra de navegacion
+        self.navigationItem.leftBarButtonItem=svc.displayModeButtonItem;
+        
+        
+    }
+}
+
+
+
+
 
 @end

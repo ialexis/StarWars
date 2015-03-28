@@ -32,23 +32,35 @@
     
     IAAStarWarsUniverse *universe = [IAAStarWarsUniverse new];
     
-    //creamos el controlador
+    //creamos los controladores
     
     IAAUniverseTableViewController *uVC=[[IAAUniverseTableViewController alloc]initWithModel:universe style:UITableViewStylePlain];
+    IAACharacterViewController *charVC=[[IAACharacterViewController alloc] initWithModel:[universe imperialAtIndex:0]];
     
     
-    //creo el combinador
+    //creamos los Navigation Controllers
     
-    UINavigationController *nav = [UINavigationController new];
-    [nav pushViewController:uVC animated:NO];
+    UINavigationController *uNav = [UINavigationController new];
+    [uNav pushViewController:uVC animated:NO];
     
+    UINavigationController *cNav = [UINavigationController new];
+    [cNav pushViewController:charVC animated:NO];
+    
+    
+    //Creo el splitview controller
+    
+    UISplitViewController *spliVC = [[UISplitViewController alloc]init];
+    spliVC.viewControllers = @[uNav, cNav];
+    
+    //asignamos delegados
+    spliVC.delegate = charVC;
    // UITabBarController *tabVC=[[UITabBarController alloc]init];
     
    // tabVC.viewControllers = [self arrayOfControllers];
 
     
    // self.window.rootViewController=charVC;
-    self.window.rootViewController=nav;
+    self.window.rootViewController=spliVC;
     
     return YES;
 }
