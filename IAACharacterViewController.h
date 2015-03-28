@@ -10,8 +10,11 @@
 #import "IAAStarWarsCharacter.h"
 #import "CafPlayer.h"
 #import "IAAWikiViewController.h"
+#import "IAAUniverseTableViewController.h"
 
-@interface IAACharacterViewController : UIViewController <UISplitViewControllerDelegate>
+@class IAAUniverseTableViewController;
+
+@interface IAACharacterViewController : UIViewController <UISplitViewControllerDelegate,IAAUniverseTableViewControllerDelgate>
 
 @property (nonatomic,strong) IAAStarWarsCharacter *model;
 @property (nonatomic, strong) CafPlayer *player;

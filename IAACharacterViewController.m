@@ -9,7 +9,6 @@
 #import "IAACharacterViewController.h"
 
 
-
 @interface IAACharacterViewController ()
 
 @end
@@ -57,7 +56,7 @@
     
     
     //sincronizar modelo y vista
-    self.photoView.image=self.model.photo;
+    [self syncViewWithModel];
     
 }
 - (void)didReceiveMemoryWarning {
@@ -85,6 +84,22 @@
     }
 }
 
+#pragma mark - IAAUniverseTableViewControllerDelgate
+
+-(void) universeTableViewController:(IAAUniverseTableViewController *)uVC didSelectCharacter:(IAAStarWarsCharacter *)character
+{
+    //Actualizo el modelo
+    self.model= character;
+    
+    //sincronizco modelo con vista
+    [self syncViewWithModel];
+}
+
+- (void)syncViewWithModel
+{
+    self.title=self.model.alias;
+    self.photoView.image=self.model.photo;
+}
 
 
 

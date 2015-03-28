@@ -54,6 +54,7 @@
     
     //asignamos delegados
     spliVC.delegate = charVC;
+    uVC.delegate = charVC;
    // UITabBarController *tabVC=[[UITabBarController alloc]init];
     
    // tabVC.viewControllers = [self arrayOfControllers];

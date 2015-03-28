@@ -13,13 +13,23 @@
 #import <UIKit/UIKit.h>
 #import "IAAStarWarsUniverse.h"
 
+@class IAAUniverseTableViewController;
+
+@protocol IAAUniverseTableViewControllerDelgate <NSObject>
+
+@optional
+
+- (void) universeTableViewController:(IAAUniverseTableViewController *) uVC didSelectCharacter:(IAAStarWarsCharacter *) character;
+
+
+@end
 
 
 
 @interface IAAUniverseTableViewController : UITableViewController
 
 @property (strong,nonatomic) IAAStarWarsUniverse *model;
-
+@property (weak, nonatomic) id<IAAUniverseTableViewControllerDelgate> delegate;
 
 -(id) initWithModel: (IAAStarWarsUniverse *) model style:(UITableViewStyle)style;
 

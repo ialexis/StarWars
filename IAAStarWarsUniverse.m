@@ -82,7 +82,7 @@
         
         
         IAAStarWarsCharacter *chewie=[[IAAStarWarsCharacter alloc]
-                                      initWithAlias:@"chewbacca"
+                                      initWithAlias:@"Chewbacca"
                                       wikiURL:chewieURL
                                       soundData:chewieSound
                                       photo:chewieImage];

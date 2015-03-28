@@ -116,13 +116,17 @@
     
     IAAStarWarsCharacter *character = [self charactarAtIndexPath:indexPath];
     
+    
+    //avisar al delegado (siempre y cuando entienda el mensaje)
+    
+    if ([self.delegate respondsToSelector:@selector(universeTableViewController:didSelectCharacter:)])
+    {
+        [self.delegate universeTableViewController:self didSelectCharacter:character];    
+    }
+    
+    
    
-    //crear el controlador de character
-    
-    IAACharacterViewController *charVC = [[IAACharacterViewController alloc]initWithModel:character];
-    
-    //hacemos un push
-    [self.navigationController pushViewController:charVC animated:YES];
+   
 }
 
 
@@ -187,5 +191,6 @@
     }
     return character;
 }
+
 
 @end
