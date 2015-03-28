@@ -101,9 +101,42 @@
                                     wikiURL:r2d2URL
                                     soundData:r2d2Sound
                                     photo:r2d2Image];
-   
         
-        self.imperials =@[vader];
+        //Palpatine
+        
+        NSURL *palpatineURL = [NSURL URLWithString:@"http://en.wikipedia.org/wiki/Palpatine"];
+        
+        
+        NSData *palpatineSound = [NSData dataWithContentsOfURL:[b URLForResource:@"palpatine" withExtension:@"caf"]];
+        UIImage *palpatineImage=[UIImage imageNamed:@"palpatine.jpg"];
+        
+        
+        IAAStarWarsCharacter *palpatine=[[IAAStarWarsCharacter alloc]
+                                    initWithName:@"Palpatine"
+                                    alias:@"Darth Sidious"
+                                    wikiURL:palpatineURL
+                                    soundData:palpatineSound
+                                    photo:palpatineImage];
+
+        
+        //Tarkin
+        
+        NSURL *tarkinURL = [NSURL URLWithString:@"http://en.wikipedia.org/wiki/Tarkin"];
+        
+        
+        NSData *tarkinSound = [NSData dataWithContentsOfURL:[b URLForResource:@"tarkin" withExtension:@"caf"]];
+        UIImage *tarkinImage=[UIImage imageNamed:@"tarkin.jpg"];
+        
+        
+        IAAStarWarsCharacter *tarkin=[[IAAStarWarsCharacter alloc]
+                                         initWithName:@"Wilhuf Tarkin"
+                                         alias:@"Grand Moff Tarkin"
+                                         wikiURL:tarkinURL
+                                         soundData:tarkinSound
+                                         photo:tarkinImage];
+
+        
+        self.imperials =@[vader,tarkin,palpatine];
         self.rebels =  @[chewie, c3po, r2d2, yoda];
     }
     return self;
@@ -111,13 +144,13 @@
 
 #pragma mark - Properties
 
-- (NSUInteger) rebelCount
+- (NSUInteger) rebelsCount
 {
     return [self.rebels count];
 }
 
 
-- (NSUInteger) imperialCount
+- (NSUInteger) imperialsCount
 {
     return [self.imperials count];
 }

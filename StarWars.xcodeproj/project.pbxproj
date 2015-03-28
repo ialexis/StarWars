@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C341F1E1AC4D64500121ABE /* IAAStarWarsUniverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C341F1D1AC4D64500121ABE /* IAAStarWarsUniverse.m */; };
+		2C341F211AC574D100121ABE /* IAAUniverseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C341F201AC574D100121ABE /* IAAUniverseTableViewController.m */; };
 		2C6C4F2D1AC348490085B9E1 /* CafPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C4F2C1AC348490085B9E1 /* CafPlayer.m */; };
 		2C6C4F321AC34E5E0085B9E1 /* IAAWikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6C4F301AC34E5E0085B9E1 /* IAAWikiViewController.m */; };
 		2C6C4F331AC34E5E0085B9E1 /* IAAWikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6C4F311AC34E5E0085B9E1 /* IAAWikiViewController.xib */; };
@@ -50,6 +51,8 @@
 /* Begin PBXFileReference section */
 		2C341F1C1AC4D64500121ABE /* IAAStarWarsUniverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAAStarWarsUniverse.h; sourceTree = "<group>"; };
 		2C341F1D1AC4D64500121ABE /* IAAStarWarsUniverse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAAStarWarsUniverse.m; sourceTree = "<group>"; };
+		2C341F1F1AC574D100121ABE /* IAAUniverseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAAUniverseTableViewController.h; sourceTree = "<group>"; };
+		2C341F201AC574D100121ABE /* IAAUniverseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAAUniverseTableViewController.m; sourceTree = "<group>"; };
 		2C6C4F2B1AC348490085B9E1 /* CafPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CafPlayer.h; sourceTree = "<group>"; };
 		2C6C4F2C1AC348490085B9E1 /* CafPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CafPlayer.m; sourceTree = "<group>"; };
 		2C6C4F2F1AC34E5E0085B9E1 /* IAAWikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAAWikiViewController.h; sourceTree = "<group>"; };
@@ -196,6 +199,8 @@
 				2C6C4F2F1AC34E5E0085B9E1 /* IAAWikiViewController.h */,
 				2C6C4F301AC34E5E0085B9E1 /* IAAWikiViewController.m */,
 				2C6C4F311AC34E5E0085B9E1 /* IAAWikiViewController.xib */,
+				2C341F1F1AC574D100121ABE /* IAAUniverseTableViewController.h */,
+				2C341F201AC574D100121ABE /* IAAUniverseTableViewController.m */,
 			);
 			name = Controllers;
 			path = ..;
@@ -345,6 +350,7 @@
 				2CC5C4E81AC21939006881B2 /* IAAStarWarsCharacter.m in Sources */,
 				2C6C4F321AC34E5E0085B9E1 /* IAAWikiViewController.m in Sources */,
 				2C6C4F2D1AC348490085B9E1 /* CafPlayer.m in Sources */,
+				2C341F211AC574D100121ABE /* IAAUniverseTableViewController.m in Sources */,
 				2C341F1E1AC4D64500121ABE /* IAAStarWarsUniverse.m in Sources */,
 				2CC5C4F01AC21A59006881B2 /* IAACharacterViewController.m in Sources */,
 				2CC5C4C91AC218FB006881B2 /* main.m in Sources */,
