@@ -58,6 +58,9 @@
     //sincronizar modelo y vista
     [self syncViewWithModel];
     
+    //si estoy dentro de un split controller le pongo el boton
+    self.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
