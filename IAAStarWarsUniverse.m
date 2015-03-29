@@ -121,7 +121,7 @@
         
         //Tarkin
         
-        NSURL *tarkinURL = [NSURL URLWithString:@"http://en.wikipedia.org/wiki/Tarkin"];
+        NSURL *tarkinURL = [NSURL URLWithString:@"http://es.wikipedia.org/wiki/Wilhuff_Tarkin"];
         
         
         NSData *tarkinSound = [NSData dataWithContentsOfURL:[b URLForResource:@"tarkin" withExtension:@"caf"]];

@@ -38,7 +38,37 @@
 
     
     [self.browser loadRequest:[NSURLRequest requestWithURL:self.model.wikiURL]];
+    
+    
+    
+    //nos damos de alta en la notificacion de aviso cuando se cambie de personaje
+    NSNotificationCenter *nCenter = [NSNotificationCenter defaultCenter];
+    [nCenter addObserver:self
+                selector:@selector (starWarsCharacterDidChange:)
+                    name:DID_SELECT_NEW_CHARACTER_NOTIFICATION_NAME
+                  object:nil];
+
 }
+
+-(void) viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:YES];
+    //nos damos de baja de las notificaciones
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+-(void) starWarsCharacterDidChange: (NSNotification *) notification
+{
+    NSDictionary *dict = [notification userInfo];
+    
+    IAAStarWarsCharacter *newCharacter = [dict objectForKey:@"STAR_WARS_CHARACTER"];
+    
+    //actualizamos el modelo
+    self.model=newCharacter;
+    self.title=self.model.alias;
+    [self.browser loadRequest:[NSURLRequest requestWithURL:self.model.wikiURL]];
+}
+
 
 #pragma mark - Inicialized
 

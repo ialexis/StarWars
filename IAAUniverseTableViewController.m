@@ -125,7 +125,13 @@
     }
     
     
-   
+    //mandamos una notificacion
+    
+    NSNotification *notificationSelectNewCharacter = [NSNotification notificationWithName:DID_SELECT_NEW_CHARACTER_NOTIFICATION_NAME
+                                                                             object:self
+                                                                           userInfo:@{@"STAR_WARS_CHARACTER": character}];
+    [[NSNotificationCenter defaultCenter] postNotification:notificationSelectNewCharacter];
+
    
 }
 

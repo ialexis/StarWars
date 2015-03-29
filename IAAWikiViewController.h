@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "IAAStarWarsCharacter.h"
+#define DID_SELECT_NEW_CHARACTER_NOTIFICATION_NAME @"NEW_CHARACTER"
 
 @interface IAAWikiViewController : UIViewController <UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *browser;

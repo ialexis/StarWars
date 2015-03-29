@@ -9,6 +9,7 @@
 
 #define IMPERIAL_SECTION 0
 #define REBEL_SECTION 1
+#define DID_SELECT_NEW_CHARACTER_NOTIFICATION_NAME @"NEW_CHARACTER"
 
 #import <UIKit/UIKit.h>
 #import "IAAStarWarsUniverse.h"
