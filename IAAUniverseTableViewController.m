@@ -197,6 +197,16 @@
     }
     return character;
 }
+#pragma mark - IAAUniverseTableViewControllerDelgate
+
+-(void) universeTableViewController:(IAAUniverseTableViewController *)uVC didSelectCharacter:(IAAStarWarsCharacter *)character
+{
+    //creamos un characerVC
+
+    IAACharacterViewController *charVC = [[IAACharacterViewController alloc]initWithModel:character];
+    //hacemos un push
+    [self.navigationController pushViewController:charVC animated:YES];
+}
 
 
 @end

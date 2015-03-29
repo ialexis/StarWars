@@ -32,36 +32,19 @@
     
     IAAStarWarsUniverse *universe = [IAAStarWarsUniverse new];
     
-    //creamos los controladores
     
-    IAAUniverseTableViewController *uVC=[[IAAUniverseTableViewController alloc]initWithModel:universe style:UITableViewStylePlain];
-    IAACharacterViewController *charVC=[[IAACharacterViewController alloc] initWithModel:[universe imperialAtIndex:0]];
+    //averiguamos el tipo de pantalla que tenemos
+    if ([[UIDevice currentDevice] userInterfaceIdiom]==UIUserInterfaceIdiomPad)
+    {
+        //tipo tablet
+        [self configureForPadWithModel:universe];
+    }
+    else
+    {
+        //tipo telefono
+        [self configureForPhoneWithModel:universe];
+    }
     
-    
-    //creamos los Navigation Controllers
-    
-    UINavigationController *uNav = [UINavigationController new];
-    [uNav pushViewController:uVC animated:NO];
-    
-    UINavigationController *cNav = [UINavigationController new];
-    [cNav pushViewController:charVC animated:NO];
-    
-    
-    //Creo el splitview controller
-    
-    UISplitViewController *spliVC = [[UISplitViewController alloc]init];
-    spliVC.viewControllers = @[uNav, cNav];
-    
-    //asignamos delegados
-    spliVC.delegate = charVC;
-    uVC.delegate = charVC;
-   // UITabBarController *tabVC=[[UITabBarController alloc]init];
-    
-   // tabVC.viewControllers = [self arrayOfControllers];
-
-    
-   // self.window.rootViewController=charVC;
-    self.window.rootViewController=spliVC;
     
     return YES;
 }
@@ -88,5 +71,54 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark - configure screen 
+-(void) configureForPadWithModel: (IAAStarWarsUniverse *) universe
+{
+    //creamos los controladores
+    
+    IAAUniverseTableViewController *uVC=[[IAAUniverseTableViewController alloc]initWithModel:universe style:UITableViewStylePlain];
+    IAACharacterViewController *charVC=[[IAACharacterViewController alloc] initWithModel:[universe imperialAtIndex:0]];
+    
+    
+    //creamos los Navigation Controllers
+    
+    UINavigationController *uNav = [UINavigationController new];
+    [uNav pushViewController:uVC animated:NO];
+    
+    UINavigationController *cNav = [UINavigationController new];
+    [cNav pushViewController:charVC animated:NO];
+    
+    
+    //Creo el splitview controller
+    
+    UISplitViewController *spliVC = [[UISplitViewController alloc]init];
+    spliVC.viewControllers = @[uNav, cNav];
+    
+    //asignamos delegados
+    spliVC.delegate = charVC;
+    uVC.delegate = charVC;
 
+    
+    
+    // self.window.rootViewController=charVC;
+    self.window.rootViewController=spliVC;
+
+}
+
+-(void) configureForPhoneWithModel: (IAAStarWarsUniverse *) universe
+{
+    //creamos el controlador
+     IAAUniverseTableViewController *uVC=[[IAAUniverseTableViewController alloc]initWithModel:universe style:UITableViewStylePlain];
+    
+    //creamos el combinador
+    UINavigationController *uNav = [UINavigationController new];
+    [uNav pushViewController:uVC animated:NO];
+
+    //Asignamos delegados
+    uVC.delegate = uVC.self;
+    
+    //lo hacemos root
+    self.window.rootViewController=uNav;
+
+}
 @end

@@ -27,7 +27,7 @@
 
 
 
-@interface IAAUniverseTableViewController : UITableViewController
+@interface IAAUniverseTableViewController : UITableViewController <IAAUniverseTableViewControllerDelgate>
 
 @property (strong,nonatomic) IAAStarWarsUniverse *model;
 @property (weak, nonatomic) id<IAAUniverseTableViewControllerDelgate> delegate;
