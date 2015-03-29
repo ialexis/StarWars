@@ -12,6 +12,7 @@
 #import "IAAWikiViewController.h"
 #import "IAAStarWarsUniverse.h"
 #import "IAAUniverseTableViewController.h"
+#import "Settings.h"
 
 @interface AppDelegate ()
  
@@ -21,6 +22,23 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
+    //valor por defecto para ultimo personaje seleccionado
+    NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+    if (![def objectForKey:LAST_SELECTED_CHARACTER])
+    {
+        //Guardamos el valor por defecto
+        [def setObject:@[@(IMPERIAL_SECTION),@0] forKey:LAST_SELECTED_CHARACTER] ;
+        //por si acaso
+        [def synchronize];
+    }
+    
+    
+    
+    
+    
+    //Se crea una vista de tipo UIWindow
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
@@ -77,7 +95,7 @@
     //creamos los controladores
     
     IAAUniverseTableViewController *uVC=[[IAAUniverseTableViewController alloc]initWithModel:universe style:UITableViewStylePlain];
-    IAACharacterViewController *charVC=[[IAACharacterViewController alloc] initWithModel:[universe imperialAtIndex:0]];
+    IAACharacterViewController *charVC=[[IAACharacterViewController alloc] initWithModel:[self lastSelectedCharacterInModel: universe]];
     
     
     //creamos los Navigation Controllers
@@ -120,5 +138,34 @@
     //lo hacemos root
     self.window.rootViewController=uNav;
 
+}
+
+
+-(IAAStarWarsCharacter *)lastSelectedCharacterInModel: (IAAStarWarsUniverse *) u
+{
+    //obtengo el NSUserDefaults
+    NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+    
+    
+    //saco las coordenadas del ultimo personaje
+    NSArray *coords = [def objectForKey:LAST_SELECTED_CHARACTER];
+    NSUInteger section = [[coords objectAtIndex:0] integerValue];
+    NSUInteger pos = [[coords objectAtIndex:1] integerValue];
+    
+    
+    //obtengo el personaje
+    IAAStarWarsCharacter *character;
+    if (section == IMPERIAL_SECTION)
+    {
+        character = [u imperialAtIndex:pos];
+        
+    }
+    else
+    {
+        character = [u rebelAtIndex:pos];
+    }
+    
+    //lo devuelvo
+    return character;
 }
 @end

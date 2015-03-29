@@ -8,6 +8,7 @@
 
 #import "IAAUniverseTableViewController.h"
 #import "IAACharacterViewController.h"
+#import "Settings.h"
 
 @interface IAAUniverseTableViewController ()
 
@@ -116,7 +117,6 @@
     
     IAAStarWarsCharacter *character = [self charactarAtIndexPath:indexPath];
     
-    
     //avisar al delegado (siempre y cuando entienda el mensaje)
     
     if ([self.delegate respondsToSelector:@selector(universeTableViewController:didSelectCharacter:)])
@@ -131,6 +131,16 @@
                                                                              object:self
                                                                            userInfo:@{@"STAR_WARS_CHARACTER": character}];
     [[NSNotificationCenter defaultCenter] postNotification:notificationSelectNewCharacter];
+    
+    
+    //guardamos las coordenadas del ultimo personaje seleccionado
+    //Guardamos el valor por defecto
+    NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+
+    [def setObject:@[@(indexPath.section),@(indexPath.row)] forKey:LAST_SELECTED_CHARACTER] ;
+    //por si acaso
+    [def synchronize];
+
 
    
 }

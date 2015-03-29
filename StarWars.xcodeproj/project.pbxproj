@@ -49,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C0256901AC80D4A00F9BBC0 /* Settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		2C341F1C1AC4D64500121ABE /* IAAStarWarsUniverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAAStarWarsUniverse.h; sourceTree = "<group>"; };
 		2C341F1D1AC4D64500121ABE /* IAAStarWarsUniverse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAAStarWarsUniverse.m; sourceTree = "<group>"; };
 		2C341F1F1AC574D100121ABE /* IAAUniverseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAAUniverseTableViewController.h; sourceTree = "<group>"; };
@@ -141,6 +142,7 @@
 			children = (
 				2CC5C4CA1AC218FB006881B2 /* AppDelegate.h */,
 				2CC5C4CB1AC218FB006881B2 /* AppDelegate.m */,
+				2C0256901AC80D4A00F9BBC0 /* Settings.h */,
 				2C6C4F2E1AC348760085B9E1 /* Sound */,
 				2CC5C4CD1AC218FB006881B2 /* Images.xcassets */,
 				2CC5C4CF1AC218FB006881B2 /* LaunchScreen.xib */,
