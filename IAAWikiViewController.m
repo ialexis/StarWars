@@ -7,6 +7,7 @@
 //
 
 #import "IAAWikiViewController.h"
+#import "IAAUniverseTableViewController.h" //para tener acceso a los nombres de las constantes de cara a las notificaciones
 
 
 @implementation IAAWikiViewController
@@ -33,18 +34,14 @@
     self.browser.delegate = self;
     //sincronizamos modelo y vista
     
-    [self.activityView setHidden:NO];
-    [self.activityView startAnimating];
-
-    
-    [self.browser loadRequest:[NSURLRequest requestWithURL:self.model.wikiURL]];
+    [self syncWithModel];
     
     
     
     //nos damos de alta en la notificacion de aviso cuando se cambie de personaje
     NSNotificationCenter *nCenter = [NSNotificationCenter defaultCenter];
     [nCenter addObserver:self
-                selector:@selector (starWarsCharacterDidChange:)
+                selector:@selector (notifyStarWarsCharacterDidChange:)
                     name:DID_SELECT_NEW_CHARACTER_NOTIFICATION_NAME
                   object:nil];
 
@@ -57,7 +54,9 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
--(void) starWarsCharacterDidChange: (NSNotification *) notification
+#pragma mark - notifications
+
+-(void) notifyStarWarsCharacterDidChange: (NSNotification *) notification
 {
     NSDictionary *dict = [notification userInfo];
     
@@ -65,8 +64,20 @@
     
     //actualizamos el modelo
     self.model=newCharacter;
+    
+    //Sincronizamos vista y modelo
+    [self syncWithModel];
+}
+
+-(void) syncWithModel
+{
+    [self.activityView setHidden:NO];
+    [self.activityView startAnimating];
+    
     self.title=self.model.alias;
+    
     [self.browser loadRequest:[NSURLRequest requestWithURL:self.model.wikiURL]];
+
 }
 
 
